@@ -1,0 +1,11 @@
+{
+  "name": "pixapp",
+  "version": "1.0.0",
+  "description": "pixie inspired personal project to practice CSS, JS and accessibility",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

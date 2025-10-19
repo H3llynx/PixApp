@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixApp</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <img src="./pix/ornament.png" alt="plant ornament" class="ornament">
+      <h1>Feline Leaf Chase</h1>
+      <span class="slide" id="slide-instruction">Slide to pick your cat</span>
+      <span class="visually-hidden" id="keyboard-instruction">You can also press Tab to switch from one cat to
+        another.</span>
+    </div>
+    <div class="cat-container" role="region" aria-describedby="slide-instruction keyboard-instruction">
+      <img src="./pix/avatars/pixie.png" alt="Pixie" id="pixie" role="button" tabindex="0"
+        aria-label="Click or press Enter to chose Pixie" data-cat="pixie" class="select" />
+      <img src="./pix/avatars/maya.png" alt="Maya" id="maya" role="button" tabindex="0"
+        aria-label="Click or press Enter to chose Maya" data-cat="maya" class="select" />
+    </div>
+  </header>
+  <main>
+    <!-- ABOVE: Leaf zone -->
+    <div id="leaf-zone">
+      <img src="./pix/leaves/yuca.png" alt="flying yuca leaf" id="leaf-img" class="leaf" />
+      <img src="./pix/leaves/monstera.png" alt="flying monstera leaf" id="leaf-img2" class="hidden leaf" />
+    </div>
+    <!-- FLOOR: initial cat position -->
+    <div id="jump-zone">
+      <!-- FLOOR: Jumping and landing positions -->
+    </div>
+    <!-- FLOOR: Shadows -->
+    <div class="cat-shadow"></div>
+    <div class="leaf-shadow"></div>
+  </main>
+  <div id="sr-status" role="status" aria-live="assertive" class="visually-hidden">
+    Welcome! This app is about a cat who wants to catch a leaf floating in the air, kept aloft by a ceiling fan. It's
+    inspired by a real cat who gave us a lot of fun. You can choose between two cats, Pixie and Maya, to play. Pixie, a
+    grey tabby cat, is the one that inspired us to create the app. Maya existed too! She was a lovely calico cat—white,
+    gray, and ginger. Use your keyboard or mouse to select which cat you want to play with, and help her catch the leaf!
+  </div>
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>
